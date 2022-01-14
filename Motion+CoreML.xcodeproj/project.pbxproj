@@ -11,6 +11,8 @@
 		CEA84AC327917519008923B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA84AC227917519008923B2 /* ContentView.swift */; };
 		CEA84AC52791751B008923B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA84AC42791751B008923B2 /* Assets.xcassets */; };
 		CEA84AC82791751B008923B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA84AC72791751B008923B2 /* Preview Assets.xcassets */; };
+		CEA84AD3279175CB008923B2 /* ActivityClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA84AD2279175CB008923B2 /* ActivityClassificationView.swift */; };
+		CEA84AD52791763F008923B2 /* SensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA84AD42791763F008923B2 /* SensorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CEA84AC227917519008923B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEA84AC42791751B008923B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA84AC72791751B008923B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEA84AD2279175CB008923B2 /* ActivityClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityClassificationView.swift; sourceTree = "<group>"; };
+		CEA84AD42791763F008923B2 /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		CEA84ABF27917519008923B2 /* Motion+CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				CEA84ACF27917585008923B2 /* Model */,
+				CEA84ACE2791757E008923B2 /* View */,
 				CEA84AC027917519008923B2 /* Motion_CoreMLApp.swift */,
-				CEA84AC227917519008923B2 /* ContentView.swift */,
 				CEA84AC42791751B008923B2 /* Assets.xcassets */,
 				CEA84AC62791751B008923B2 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				CEA84AC72791751B008923B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEA84ACE2791757E008923B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEA84AC227917519008923B2 /* ContentView.swift */,
+				CEA84AD2279175CB008923B2 /* ActivityClassificationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA84ACF27917585008923B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA84AD42791763F008923B2 /* SensorManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA84AC327917519008923B2 /* ContentView.swift in Sources */,
+				CEA84AD3279175CB008923B2 /* ActivityClassificationView.swift in Sources */,
 				CEA84AC127917519008923B2 /* Motion_CoreMLApp.swift in Sources */,
+				CEA84AD52791763F008923B2 /* SensorManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
