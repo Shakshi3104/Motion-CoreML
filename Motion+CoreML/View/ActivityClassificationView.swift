@@ -70,7 +70,7 @@ struct SensorData: View {
         HStack {
             Text(axis)
                 .font(.system(.body, design: .rounded))
-                .padding(.vertical, 5)
+                .padding(.horizontal, 15)
             Spacer()
             Text(String(format: "%.3f", value))
                 .font(.system(.body, design: .rounded).monospacedDigit())
