@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE720BDB27926565003C7516 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEA25014279248D500021385 /* SidewalkSurfaceClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceClassifier.mlmodel; sourceTree = "<group>"; };
 		CEA250172792494300021385 /* MNCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCoreML.swift; sourceTree = "<group>"; };
 		CEA2501927924AC500021385 /* MLMultiArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Extension.swift"; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		CEA84AB427917519008923B2 = {
 			isa = PBXGroup;
 			children = (
+				CE720BDB27926565003C7516 /* README.md */,
 				CEA84ABF27917519008923B2 /* Motion+CoreML */,
 				CEA84ABE27917519008923B2 /* Products */,
 			);
