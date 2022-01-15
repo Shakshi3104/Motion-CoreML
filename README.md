@@ -6,3 +6,8 @@ This is a demo app that classify activity from acceleration data obtained by iPh
 
 - iOS 14.0+
 - Xcode 13.0+
+
+## App size
+
+- ~ MB: ~.mlmodel
+- ~ MB: other codes
