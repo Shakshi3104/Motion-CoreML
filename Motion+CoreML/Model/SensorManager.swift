@@ -25,9 +25,19 @@ class SensorManager: NSObject, ObservableObject {
     private var cancellable: AnyCancellable?
     
     /// - Tag: activity classifier
-//    lazy var classifier: VGG16 {
-//        let config = 
-//    }
+    lazy var classifier: SidewalkSurfaceClassifier = {
+        do {
+            let config = MLModelConfiguration()
+            return try SidewalkSurfaceClassifier(configuration: config)
+        } catch {
+            fatalError("Failed to load a model: \(error)")
+        }
+    }()
+    
+    /// - Tag: classification results
+    @Published var classLabel: String = "?"
+    @Published var confidence: Double = 0.0
+    
     
     override init() {
         super.init()
@@ -53,12 +63,24 @@ class SensorManager: NSObject, ObservableObject {
         
         // predict activity from acceleration data
         if accelerometerData.count == 256 * 3 {
+            do {
+                let multiArray = try MLMultiArray.fromDouble(accelerometerData)
+                let output = try classifier.prediction(input: multiArray)
+                classLabel = output.classLabel
+                confidence = output.Identity[output.classLabel] ?? -1.0
+            } catch {
+                fatalError("Failed to predict: \(error)")
+            }
             
+            print("🏃🏼 \(classLabel) \(confidence)")
+            
+            // remove all to new prediction
+            accelerometerData.removeAll()
         }
     }
     
     func start(frequency: Double = 100.0) {
-        if let motionManager = motionManager, motionManager.isAccelerometerActive {
+        if let motionManager = motionManager, motionManager.isAccelerometerAvailable {
             motionManager.startAccelerometerUpdates()
         }
         
@@ -70,6 +92,10 @@ class SensorManager: NSObject, ObservableObject {
     }
     
     func cancel() {
+        if let motionManager = motionManager, motionManager.isAccelerometerActive {
+            motionManager.stopAccelerometerUpdates()
+        }
         
+        cancellable?.cancel()
     }
 }
