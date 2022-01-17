@@ -25,10 +25,10 @@ class SensorManager: NSObject, ObservableObject {
     private var cancellable: AnyCancellable?
     
     /// - Tag: activity classifier
-    lazy var classifier: SidewalkSurfaceClassifier = {
+    lazy var classifier: PyramidNet18 = {
         do {
             let config = MLModelConfiguration()
-            return try SidewalkSurfaceClassifier(configuration: config)
+            return try PyramidNet18(configuration: config)
         } catch {
             fatalError("Failed to load a model: \(error)")
         }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA25015279248D500021385 /* SidewalkSurfaceClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEA25014279248D500021385 /* SidewalkSurfaceClassifier.mlmodel */; };
+		CE4F569C2795364700686EBB /* PyramidNet18.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE4F569B2795364700686EBB /* PyramidNet18.mlmodel */; };
 		CEA2501A27924AC500021385 /* MLMultiArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2501927924AC500021385 /* MLMultiArray+Extension.swift */; };
 		CEA2501D2792584100021385 /* MNCoreMLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA2501B27924BF000021385 /* MNCoreMLConvertible.swift */; };
 		CEA2501E2792584100021385 /* MNCoreML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA250172792494300021385 /* MNCoreML.swift */; };
@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4F569B2795364700686EBB /* PyramidNet18.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PyramidNet18.mlmodel; sourceTree = "<group>"; };
 		CE720BDB27926565003C7516 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CEA25014279248D500021385 /* SidewalkSurfaceClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SidewalkSurfaceClassifier.mlmodel; sourceTree = "<group>"; };
 		CEA250172792494300021385 /* MNCoreML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCoreML.swift; sourceTree = "<group>"; };
 		CEA2501927924AC500021385 /* MLMultiArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Extension.swift"; sourceTree = "<group>"; };
 		CEA2501B27924BF000021385 /* MNCoreMLConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNCoreMLConvertible.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA25016279248EA00021385 /* Motion */,
-				CEA25014279248D500021385 /* SidewalkSurfaceClassifier.mlmodel */,
+				CE4F569B2795364700686EBB /* PyramidNet18.mlmodel */,
 				CEA84AD42791763F008923B2 /* SensorManager.swift */,
 			);
 			path = Model;
@@ -183,8 +183,8 @@
 			files = (
 				CEA84AC327917519008923B2 /* ContentView.swift in Sources */,
 				CEA84AD3279175CB008923B2 /* ActivityClassificationView.swift in Sources */,
+				CE4F569C2795364700686EBB /* PyramidNet18.mlmodel in Sources */,
 				CEA84AC127917519008923B2 /* Motion_CoreMLApp.swift in Sources */,
-				CEA25015279248D500021385 /* SidewalkSurfaceClassifier.mlmodel in Sources */,
 				CEA2501D2792584100021385 /* MNCoreMLConvertible.swift in Sources */,
 				CEA2501A27924AC500021385 /* MLMultiArray+Extension.swift in Sources */,
 				CEA2501E2792584100021385 /* MNCoreML.swift in Sources */,
