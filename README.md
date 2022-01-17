@@ -9,5 +9,7 @@ This is a demo app that classify activity from acceleration data obtained by iPh
 
 ## App size
 
-- ~ MB: ~.mlmodel
-- ~ MB: other codes
+Total app size: 2.2 MB
+
+- 1.6 MB: PyramidNet18.mlmodel
+- 0.6 MB: other codes
