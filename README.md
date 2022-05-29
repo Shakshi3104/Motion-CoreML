@@ -2,6 +2,10 @@
 
 This is a demo app that classify activity from acceleration data obtained by iPhone with Core ML.
 
+<p align="center">
+    <img src="materials/Motion-CoreML.gif" width=256>
+</p>
+
 ## Requirements
 
 - iOS 14.0+

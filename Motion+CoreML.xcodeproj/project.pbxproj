@@ -32,6 +32,7 @@
 		CEA84AC72791751B008923B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEA84AD2279175CB008923B2 /* ActivityClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityClassificationView.swift; sourceTree = "<group>"; };
 		CEA84AD42791763F008923B2 /* SensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorManager.swift; sourceTree = "<group>"; };
+		CEDC613028439EF700A95B2A /* Motion-CoreML.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Motion-CoreML.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		CEA84AB427917519008923B2 = {
 			isa = PBXGroup;
 			children = (
+				CEDC612F28439EEB00A95B2A /* materials */,
 				CE720BDB27926565003C7516 /* README.md */,
 				CEA84ABF27917519008923B2 /* Motion+CoreML */,
 				CEA84ABE27917519008923B2 /* Products */,
@@ -109,6 +111,14 @@
 				CEA84AD42791763F008923B2 /* SensorManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDC612F28439EEB00A95B2A /* materials */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC613028439EF700A95B2A /* Motion-CoreML.gif */,
+			);
+			path = materials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
